@@ -8,6 +8,7 @@
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
+            HorizontalOptions="Center"
             >
 
             <Label
@@ -16,17 +17,19 @@
                 Margin="0,20,0,80"
                 TextDecorations="Underline"
                 FontAttributes="Bold"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                />
 
             <Entry
                 x:Name="loginID"
                 Placeholder="Enter account username"
-                HorizontalOptions="Center"/>
+                MaxLength="30"
+                />
 
             <Entry 
                 x:Name="loginPassword"
                 Placeholder="Enter account password"
-                HorizontalOptions="Center"
+                MaxLength="30"
                 />
 
             <Button
@@ -42,6 +45,7 @@
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
+
     </ScrollView>
 
 </ContentPage>

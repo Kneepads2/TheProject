@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
     private async void loginClicked(object sender, EventArgs e)
     {
 
-        await Navigation.PushAsync(new NewPage1());
+        await Navigation.PushAsync(new NewPage3());
     }
     private async void createClicked(object sender, EventArgs e)
     {

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheProject.NewPage3"
+             Title="Bank Account">
+    <VerticalStackLayout>
+        <Label
+                Text="Bank of Something"
+                FontSize="35"
+                Margin="0,20,0,80"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button
+                x:Name="chequingAcc"
+                Text="Chequing Account"
+                Clicked="chequingClicked"/>
+                <ImageButton
+                   Source="warning.png"
+                   WidthRequest="30"
+                   HeightRequest="30"
+                   x:Name="chequingHelp"
+                   Clicked="chequeHelpClicked"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <ImageButton
+                    Source="warning.png"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    x:Name="savingsHelp"
+                    Clicked="savingsHelpClicked"/>
+                <Button
+                x:Name="savingsAcc"
+                Text="Savings Account"
+                Clicked="savingClicked"/>
+
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label
+                x:Name="chequeInfo"
+                Text=""
+                FontSize="Body"
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,25,0,0"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                x:Name="savingsInfo"
+                Text=""
+                HorizontalTextAlignment="Center"
+                Margin="0,25,0,0"
+                FontSize="Body"
+                HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

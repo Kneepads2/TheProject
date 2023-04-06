@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheProject.NewPage4"
+             Title="Your Chequing Account">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            Margin="0,20,0,0"
+            >
+
+            <Label
+                Text="Welcome, User!"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <StackLayout Orientation="Horizontal" Margin="0,100,0,0">
+                <Entry 
+                x:Name="c_deposit"
+                Placeholder="Enter amount of money you wish to deposit"
+                WidthRequest="300"
+                HorizontalOptions="StartAndExpand"
+                HeightRequest="25"
+                />
+                <VerticalStackLayout>
+                    <Label
+                        Text="Account Balance"
+                        TextDecorations="Underline"
+                        FontSize="30"
+                        HorizontalOptions="Center" />
+                    <Label
+                        x:Name="c_accountBal"
+                        Text="Your money"
+                        FontSize="20"
+                        HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                <Entry
+                x:Name="c_withdrawal"
+                Placeholder="Enter amount of money you wish to withdraw"
+                WidthRequest="315"
+                HorizontalOptions="EndAndExpand"
+                HeightRequest="25"/>
+
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button
+                x:Name="c_depositButton"
+                Text="Deposit"
+                Margin="100,0,0,0"
+                HorizontalOptions="StartAndExpand" />
+
+                <Button
+                x:Name="c_withdrawButton"
+                Text="Withdraw"
+                Margin="0,0,100,0"
+                HorizontalOptions="EndAndExpand" />
+            </StackLayout>
+            <Image
+                Source="dotnet_bot.png"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                HeightRequest="300"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
