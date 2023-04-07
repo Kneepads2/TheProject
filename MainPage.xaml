@@ -5,13 +5,13 @@
              Title="Bank of Something">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            HorizontalOptions="Center"
-            >
+        <StackLayout>
+            <VerticalStackLayout
+                    Spacing="25"
+                    Padding="30,0"
+                    HorizontalOptions="Center">
 
-            <Label
+                <Label
                 Text="Bank of Something"
                 FontSize="35"
                 Margin="0,20,0,80"
@@ -20,32 +20,44 @@
                 HorizontalOptions="Center"
                 />
 
-            <Entry
+                <Entry
                 x:Name="loginID"
                 Placeholder="Enter account username"
                 MaxLength="30"
                 />
 
-            <Entry 
+                <Entry 
                 x:Name="loginPassword"
                 Placeholder="Enter account password"
                 MaxLength="30"
                 />
 
-            <Button
+                <Button
                 x:Name="loginButton"
                 Text="Login"
                 Clicked="loginClicked"
                 HorizontalOptions="Center" />
 
-            <Button
+                <Button
                 x:Name="createButton"
                 Text="Create Account"
                 Clicked="createClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                />
 
-        </VerticalStackLayout>
-
+            </VerticalStackLayout>
+            <VerticalStackLayout VerticalOptions="EndAndExpand">
+                <Label
+                    Text="Frederick Ford                            Bank of Something                           Dylan Tran"
+                    x:Name="mainBottom"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="BlueViolet"
+                    TextColor="White"/>
+            </VerticalStackLayout>
+        </StackLayout>
     </ScrollView>
 
 </ContentPage>

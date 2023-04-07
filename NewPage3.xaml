@@ -3,57 +3,72 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TheProject.NewPage3"
              Title="Bank Account">
-    <VerticalStackLayout>
-        <Label
+    <ScrollView>
+        <StackLayout>
+            <VerticalStackLayout>
+                <Label
                 Text="Bank of Something"
                 FontSize="35"
                 Margin="0,20,0,80"
                 TextDecorations="Underline"
                 FontAttributes="Bold"
                 HorizontalOptions="Center" />
-        <StackLayout Orientation="Horizontal">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Button
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Button
                 x:Name="chequingAcc"
                 Text="Chequing Account"
                 Clicked="chequingClicked"/>
-                <ImageButton
+                        <ImageButton
                    Source="warning.png"
                    WidthRequest="30"
                    HeightRequest="30"
                    x:Name="chequingHelp"
                    Clicked="chequeHelpClicked"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <ImageButton
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <ImageButton
                     Source="warning.png"
                     WidthRequest="30"
                     HeightRequest="30"
                     x:Name="savingsHelp"
                     Clicked="savingsHelpClicked"/>
-                <Button
+                        <Button
                 x:Name="savingsAcc"
                 Text="Savings Account"
                 Clicked="savingClicked"/>
 
-            </StackLayout>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Label
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label
                 x:Name="chequeInfo"
                 Text=""
                 FontSize="Body"
                 HorizontalOptions="CenterAndExpand"
                 Margin="0,25,0,0"
                 HorizontalTextAlignment="Center"/>
-            <Label
+                    <Label
                 x:Name="savingsInfo"
                 Text=""
                 HorizontalTextAlignment="Center"
                 Margin="0,25,0,0"
                 FontSize="Body"
                 HorizontalOptions="CenterAndExpand"/>
-        </StackLayout>
+                </StackLayout>
 
-    </VerticalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout VerticalOptions="EndAndExpand">
+                <Label
+                    Text="Frederick Ford                            Bank of Something                           Dylan Tran"
+                    x:Name="page2Bottom"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="BlueViolet"
+                    TextColor="White"/>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -2,68 +2,81 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TheProject.NewPage1"
-             Title="Your Account">
+             Title="Your Savings Account">
     <ScrollView>
-        <VerticalStackLayout
+        <StackLayout>
+            <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             Margin="0,20,0,0"
             >
 
-            <Label
+                <Label
                 Text="Welcome, User!"
                 FontSize="20"
                 HorizontalOptions="Center" />
 
-            <StackLayout Orientation="Horizontal" Margin="0,100,0,0">
-                <Entry 
-                x:Name="deposit"
+                <StackLayout Orientation="Horizontal" Margin="0,100,0,0">
+                    <Entry 
+                x:Name="s_deposit"
                 Placeholder="Enter amount of money you wish to deposit"
                 WidthRequest="300"
                 HorizontalOptions="StartAndExpand"
                 HeightRequest="25"
                 />
-                <VerticalStackLayout>
-                    <Label
+                    <VerticalStackLayout>
+                        <Label
                         Text="Account Balance"
                         TextDecorations="Underline"
                         FontSize="30"
                         HorizontalOptions="Center" />
-                    <Label
-                        x:Name="accountBal"
+                        <Label
+                        x:Name="s_accountBal"
                         Text="Your money"
                         FontSize="20"
                         HorizontalOptions="Center" />
-                </VerticalStackLayout>
-                <Entry
-                x:Name="withdrawal"
+                    </VerticalStackLayout>
+                    <Entry
+                x:Name="s_withdrawal"
                 Placeholder="Enter amount of money you wish to withdraw"
                 WidthRequest="315"
                 HorizontalOptions="EndAndExpand"
                 HeightRequest="25"/>
 
 
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout Orientation="Horizontal">
-                <Button
-                x:Name="depositButton"
+                <StackLayout Orientation="Horizontal">
+                    <Button
+                x:Name="s_depositButton"
                 Text="Deposit"
                 Margin="100,0,0,0"
                 HorizontalOptions="StartAndExpand" />
 
-                <Button
-                x:Name="withdrawButton"
+                    <Button
+                x:Name="s_withdrawButton"
                 Text="Withdraw"
                 Margin="0,0,100,0"
                 HorizontalOptions="EndAndExpand" />
-            </StackLayout>
-            <Image
+                </StackLayout>
+                <Image
                 Source="dotnet_bot.png"
                 HorizontalOptions="Center"
                 WidthRequest="300"
                 HeightRequest="300"/>
 
-        </VerticalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout VerticalOptions="EndAndExpand">
+                <Label
+                    Text="Frederick Ford                            Bank of Something                           Dylan Tran"
+                    x:Name="page2Bottom"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="BlueViolet"
+                    TextColor="White"/>
+            </VerticalStackLayout>
+        </StackLayout>
     </ScrollView>
 </ContentPage>

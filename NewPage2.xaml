@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TheProject.NewPage2"
              Title="Account Creation">
-    <VerticalStackLayout
+    <ScrollView>
+        <StackLayout>
+            <VerticalStackLayout
         HorizontalOptions="Center"
         >
-        <Label 
+                <Label 
             Text="Bank of Something"
             VerticalOptions="Center" 
             FontSize="35"
@@ -15,24 +17,43 @@
             FontAttributes="Bold"
             />
 
-        <Entry
+                <Entry
             x:Name="username"
             Placeholder="Create your username"
             Margin="0,80,0,0"
             MaxLength="30"
             />
-        <Entry
+                <Entry
             x:Name="createPassword"
             Placeholder="Create your password"
             Margin="0,25,0,0"
             MaxLength="30"/>
 
-        <Button
+                <Button
             x:Name="accountButton"
             Text="Create Account"
             Margin="0,50,0,0"
             Clicked="accountCreated"
             HorizontalOptions="Center"/>
+                <Label
+            x:Name="accountSuccess"
+            Text=""
+            HorizontalTextAlignment="Center"
+            HorizontalOptions="Center"
+            Margin="0,30,0,0"/>
 
-    </VerticalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout VerticalOptions="EndAndExpand">
+                <Label
+                    Text="Frederick Ford                            Bank of Something                           Dylan Tran"
+                    x:Name="page2Bottom"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="BlueViolet"
+                    TextColor="White"/>
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

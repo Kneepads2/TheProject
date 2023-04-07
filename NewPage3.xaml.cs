@@ -2,10 +2,10 @@ namespace TheProject;
 
 public partial class NewPage3 : ContentPage
 {
-    public NewPage3()
-    {
-        InitializeComponent();
-    }
+	public NewPage3()
+	{
+		InitializeComponent();
+	}
     private async void savingClicked(object sender, EventArgs e)
     {
 

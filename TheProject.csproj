@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.theproject</ApplicationId>
-		<ApplicationIdGuid>2845640c-79bb-4d2d-92c3-90fd7ee86c2d</ApplicationIdGuid>
+		<ApplicationIdGuid>92c5e50d-e73d-4d00-b78c-30b11636a173</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -46,10 +46,6 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Remove="Resources\Images\warning.png" />
 	</ItemGroup>
 
 	<ItemGroup>
