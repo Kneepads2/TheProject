@@ -10,10 +10,12 @@
             Padding="30,0"
             Margin="0,20,0,0"
             >
-
                 <Label
-                Text="Welcome, User!"
-                FontSize="20"
+                Text="Bank of Something"
+                FontSize="35"
+                Margin="0,20,0,20"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
                 HorizontalOptions="Center" />
 
                 <StackLayout Orientation="Horizontal" Margin="0,100,0,0">
@@ -55,6 +57,7 @@
 
                     <Button
                 x:Name="c_withdrawButton"
+               
                 Text="Withdraw"
                 Margin="0,0,100,0"
                 HorizontalOptions="EndAndExpand" />
@@ -76,6 +79,7 @@
                     BackgroundColor="BlueViolet"
                     TextColor="White"/>
             </VerticalStackLayout>
+            <!--<ListView x:Name="lol"/>-->
         </StackLayout>
     </ScrollView>
 </ContentPage>

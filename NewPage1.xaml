@@ -12,8 +12,11 @@
             >
 
                 <Label
-                Text="Welcome, User!"
-                FontSize="20"
+                Text="Bank of Something"
+                FontSize="35"
+                Margin="0,20,0,20"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
                 HorizontalOptions="Center" />
 
                 <StackLayout Orientation="Horizontal" Margin="0,100,0,0">
