@@ -18,7 +18,7 @@
             />
 
                 <Entry
-            x:Name="username"
+            x:Name="createUsername"
             Placeholder="Create your username"
             Margin="0,80,0,0"
             MaxLength="30"

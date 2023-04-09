@@ -2,10 +2,10 @@ namespace TheProject;
 
 public partial class NewPage3 : ContentPage
 {
-	public NewPage3()
-	{
-		InitializeComponent();
-	}
+    public NewPage3()
+    {
+        InitializeComponent();
+    }
     private async void savingClicked(object sender, EventArgs e)
     {
 
@@ -23,5 +23,6 @@ public partial class NewPage3 : ContentPage
     private void savingsHelpClicked(object sender, EventArgs e)
     {
         savingsInfo.Text = "This is your savings account.\nThis account should be used to save money for the future.";
+        
     }
 }
